@@ -1,0 +1,168 @@
+/* Changement sur le body */
+body
+    {
+        /* Page*/
+        width: 1500px;
+        background-color:black;
+        /* Disposition */
+        margin: auto;
+        /* Texte */
+        text-align: center;
+        color: white;
+        /* espace entre haut-page et texte */
+        padding-top: 40px;
+    }
+/* Changement sur le header */
+#titre header
+    {
+        /* Disposition */
+        margin: auto;
+        /* Texte */
+        font-size: 40px;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        /* Page */
+        background-color: #5C6672;
+    }
+/* Changement sur la nav */
+#accueil nav
+    {
+        /* Texte*/
+        font-size: 32px;
+    }
+
+#accueil nav ul
+    {
+        /* Disposition */
+        padding: 0px;
+    }
+
+#accueil nav ul a
+    {
+        /* Style */
+        list-style-type: none;
+        text-decoration: none;
+        /* Texte */
+        color: white;
+    }
+
+#accueil nav ul li
+    {
+        /* Taille */
+        width: 300px;
+        /* Disposition */
+        display: inline-block;
+        /* Border */
+        border: 2px solid black;
+        border-radius: 20px;
+        /* Background */
+        background-color: #6C6F7F;
+    }
+
+#accueil nav ul li:hover
+    {
+        background-color: #FFA500;
+    }
+/* Changement sur video */
+video
+    {
+        width: 80%;
+    }
+/* Changement episode */
+#episode
+    {
+        width: 200px;
+        float: right;
+    }
+#episode nav
+    {
+        width: 100%;
+    }
+
+#episode ul
+    {
+        margin: 0 0 0 0;
+        padding-left: 0px;
+        list-style: none;
+    }
+
+#episode li
+    {
+        padding-bottom: 5px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+#episode .Saison
+    {
+        font-size: 20px;
+        height: 20px;
+        color: #7a3776;
+        border-radius: 5px;
+        background-color: grey;
+    }
+/* Changement sur liens dans episode */
+#episode a:visited
+    {
+        color: grey;
+    }
+#episode a
+    {
+        color: white;
+        text-decoration: none;
+        outline: none;
+        font-size: 20px;
+    }
+
+#episode a:hover
+    {
+        color: #FFA500;
+    }
+
+@media only screen
+and (max-device-width : 810px)
+and (orientation : portrait)
+    {
+        /* Changement sur le body */
+        body
+            {
+                width: 100%;
+            }
+        /* Changement sur le nav */
+        #accueil nav ul
+            {
+                padding: 0px;
+            }
+
+        #episode
+            {
+                width: 50%;
+                margin: auto;
+                float: none;
+            }
+    }
+
+@media only screen
+and (max-device-width : 1080px)
+and (min-device-width : 1000px)
+and (orientation : landscape)
+    {
+        body
+            {
+                width: 100%;
+            }
+    }
+
+@media only screen
+and (max-device-width : 915px)
+and (min-device-width : 800px)
+and (orientation : landscape)
+    {
+        body
+            {
+                width: 100%;
+            }
+        
+        video
+            {
+                width: 75%;
+            }
+    }

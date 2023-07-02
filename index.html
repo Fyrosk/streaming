@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> Crusade Streaming </title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- Import du favicon -->
+        <link rel="icon" href="./image/favicon.ico"/>
+        <!-- Import du CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <!-- Import des script javascript -->
+        <script type="text/javascript" src="./script/jquery.js"></script>
+        <script type="text/javascript" src="./script/suggestion.js"></script>
+        <script type="text/javascript" src="./script/recherche.js"></script>
+        <!-- Connexion a google font et import des font pour le text-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="titre">
+            <header> Title Title Title </header>
+        </div>
+        <div id="accueil">
+            <nav>
+                <ul>
+                    <a href="./index.html"> <li> Accueil </li> </a>
+                    <a href="./catalogue/index.html"> <li> Catalogue </li> </a>
+                </ul>
+            </nav>
+        </div>
+        <div id="recherche">
+            <input id="search" class="input" type="text" onchange="ouvrirPage()" placeholder="Rechercher votre Film / Série / Animé"> <!-- placeholder sert a mettre un texte dans l'input-->
+            <button id="searchbutton" onchange="ouvrirPage()">🔍</button>
+            <div id="suggestions"></div>
+        </div>
+    </body>
+</html>

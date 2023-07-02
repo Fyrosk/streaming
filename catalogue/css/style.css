@@ -1,0 +1,231 @@
+/* Changement body */
+body
+    {
+        /* Page*/
+        width: 1500px;
+        background-color:black;
+        /* Disposition */
+        margin: auto;
+        /* Texte */
+        text-align: center;
+        color: white;
+        /* espace entre haut-page et texte */
+        padding-top: 40px;
+    }
+/* Changement header */
+#titre header
+    {
+        /* Disposition */
+        margin: auto;
+        /* Texte */
+        font-size: 40px;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        /* Page */
+        background-color: #5C6672;
+    }
+/* Changement sur la nav */
+#accueil nav
+    {
+        /* Texte*/
+        font-size: 32px;
+    }
+
+#accueil nav ul
+    {
+        padding: none;
+    }
+
+#accueil nav ul a
+    {
+        /* Style */
+        list-style-type: none;
+        text-decoration: none;
+        /* Texte */
+        color: white;
+    }
+
+#accueil nav ul li
+    {
+        /* Taille */
+        width: 300px;
+        /* Disposition */
+        display: inline-block;
+        /* Border */
+        border: 2px solid black;
+        border-radius: 20px;
+        /* Background */
+        background-color: #6C6F7F;
+    }
+
+#accueil nav ul li:hover
+    {
+        background-color: #FFA500;
+    }
+/* Changement catalogue */
+#catalogue
+    {
+        width: 1600px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.anime
+    {
+        text-align: center;
+        color: black;
+        width: 250px;
+        padding-right: 6px;
+        padding-bottom: 15px;
+    }
+
+.minia
+    {
+        width: 250px;
+        height: 364px;
+    }
+
+.titre, .genre, .langue
+    {
+        margin: auto;
+        background-color: #F1EDEB;
+    }
+
+.titre
+    {
+        font-family: 'Mochiy Pop P One', sans-serif;
+    }
+
+.genre
+    {
+        font-family: 'Roboto Slab', serif;
+    }
+
+.langue
+    {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 24px;
+    }
+/* Hover changement d'image */
+
+#arifureta .minia:hover
+    {
+        content: url("../img/arifureta.gif");
+    }
+
+#demon_slayer .minia:hover
+    {
+        content: url("../img/demon_slayer.gif");
+    }
+
+#bakemonogatari .minia:hover
+    {
+        content: url("../img/bakemonogatari.gif");
+    }
+
+#interspectes_reviewers .minia:hover
+    {
+        content: url("../img/interspectes_reviewers.gif");
+    }
+
+@media only screen
+and (max-device-width : 810px)
+and (orientation : portrait)
+    {
+        /* Changement sur le body */
+        body
+            {
+                width: 100%;
+            }
+        /* Changement sur le nav */
+        #accueil nav ul
+            {
+                padding: 0px;
+            }
+        /* Changement sur le catalogue */
+        #catalogue
+            {
+                width: 100%;
+            }
+        
+        .anime
+            {
+                width: 250px;
+                margin: auto;
+            }
+        .minia
+            {
+                width: 250px;
+                height: 364px;
+            }
+        
+        .titre
+            {
+                font-size: 13px;
+            }
+    }
+
+@media only screen
+and (max-device-width : 1080px)
+and (min-device-width : 1000px)
+and (orientation : landscape)
+    {
+        body
+            {
+                width: 100%;
+            }
+        
+        /* Changement sur le catalogue */
+        #catalogue
+            {
+                width: 100%;
+            }
+        
+        .anime
+            {
+                width: 250px;
+                margin: auto;
+            }
+        .minia
+            {
+                width: 250px;
+                height: 364px;
+            }
+        
+        .titre
+            {
+                font-size: 13px;
+            }
+    }
+
+@media only screen
+and (max-device-width : 915px)
+and (min-device-width : 800px)
+and (orientation : landscape)
+    {
+        body
+            {
+                width: 100%;
+            }
+        
+        /* Changement sur le catalogue */
+        #catalogue
+            {
+                width: 100%;
+            }
+        
+        .anime
+            {
+                width: 250px;
+                margin: auto;
+            }
+        .minia
+            {
+                width: 250px;
+                height: 364px;
+            }
+        
+        .titre
+            {
+                font-size: 13px;
+            }
+    }
