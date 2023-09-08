@@ -2,20 +2,18 @@
 body
     {
         /* Page*/
-        width: 1500px;
-        background-color:black;
+        width: 100%;
         /* Disposition */
         margin: auto;
         /* Texte */
         text-align: center;
         color: white;
-        /* espace entre haut-page et texte */
-        padding-top: 40px;
     }
 /* Changement sur le header */
-#titre header
+#HeaderTitle
     {
         /* Disposition */
+        width: 70%;
         margin: auto;
         /* Texte */
         font-size: 40px;
@@ -48,7 +46,7 @@ body
 #accueil nav ul li
     {
         /* Taille */
-        width: 400px;
+        width: 20%;
         /* Disposition */
         display: inline-block;
         /* Border */
@@ -63,39 +61,46 @@ body
         background-color: #FFA500;
     }
 /* Changement sur le search */
-#search
+.input
     {
+        outline: none;
         /* texte */
-        color: white;
         font-size: 24px;
         text-align: center;
         font-family: 'Oswald', sans-serif;
         /* Border */
         border: grey 3px solid;
-        background-color: black;
-        border-radius: 5px;
+        border-right: 0px;
+        border-radius: 5px 0px 0px 5px;
         /* Taille */
         width: 500px;
         padding: 0px 0px 0px 0px;
     }
 /* Changement sur le button */
-#searchbutton
+.searchbutton
 {
-    border-radius: 5px;
+    border: grey 3px solid;
+    border-left: 0px;
+    border-radius: 0px 5px 5px 0px;
     position: absolute;
     width: 42px;
     height: 42px;
-    background-image: url(./chercher.png);
 }
 /* Changement sur les suggestion de recherche */
 #suggestions
     {
+        width: 500px;
+        margin: auto;
+    }
+.suggestion
+    {
+        border-radius: 5px;
         background-color: white;
         width: 500px;
         text-align: center;
         color: black;
-        margin:auto;
         font-family: 'Oswald';
+        margin-bottom: 5px;
     }
 @media only screen
 and (max-device-width : 810px)

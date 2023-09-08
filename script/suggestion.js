@@ -19,7 +19,7 @@ $(document).ready(function() {
         if(input !=''){
         result.forEach(resultItem =>
                 suggestion +=`
-                    <div class="suggestion">${resultItem.title}</div>
+                    <button class="suggestion" onclick="ouvrirPageSuggestion()">${resultItem.title}</button>
                 `
             )
         }
